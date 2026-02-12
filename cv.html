@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regina Oliva Sosa | CV Interactivo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A88B8B', // Tono rosa viejo/mauve
+                        secondary: '#F5F0F0', // Fondo suave
+                        dark: '#2D2D2D',
+                        accent: '#8B6B6B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-secondary text-gray-800 min-h-screen">
+
+    <div class="max-w-6xl mx-auto p-4 md:p-8">
+        
+        <!-- Header / Hero Section -->
+        <header class="bg-white rounded-3xl shadow-lg overflow-hidden mb-8 flex flex-col md:flex-row">
+            <!-- Profile Image Area -->
+            <div class="bg-primary md:w-1/3 p-8 flex flex-col items-center justify-center text-white text-center relative">
+                <!-- Decorative Circle -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+                
+                <div class="w-40 h-40 rounded-full bg-white border-4 border-white/30 overflow-hidden mb-4 shadow-xl z-10 relative">
+                    <!-- ACTUALIZADO: Cambiado a object-center para centrar perfectamente la foto -->
+                    <img src="perfil.jpg" onerror="this.onerror=null; this.src='perfil.jpeg'" alt="Regina Oliva Sosa" class="w-full h-full object-cover object-center">
+                </div>
+                
+                <h1 class="text-2xl font-bold z-10">Regina Oliva Sosa</h1>
+                <p class="text-white/90 text-sm mt-2 font-light z-10 max-w-xs">Técnica en RR.PP. y Comunicación Institucional</p>
+                
+                <div class="mt-6 flex gap-4 z-10">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/reginaolivasosa/" target="_blank" class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center transition-all backdrop-blur-sm hover:scale-110" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:reginaolivasosa2005@gmail.com" class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center transition-all backdrop-blur-sm hover:scale-110" title="Enviar Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5492364649926" target="_blank" class="w-10 h-10 rounded-full bg-green-500/80 hover:bg-green-600 flex items-center justify-center transition-all backdrop-blur-sm hover:scale-110 shadow-lg" title="Chat por WhatsApp">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact & Summary -->
+            <div class="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-sm text-gray-600">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-primary">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>Buenos Aires, Argentina</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-primary">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>+54 236 4649926</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-primary">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span class="truncate">reginaolivasosa2005@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-primary pl-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">Perfil Profesional</h2>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        <span class="font-bold text-gray-800">Técnica en Relaciones Públicas y Comunicación Institucional</span> con visión estratégica orientada a la 
+                        <span class="font-semibold text-primary">Comunicación Corporativa</span> y la <span class="font-semibold text-primary">Gestión de la Reputación</span>. 
+                        Especialista en potenciar la identidad de marca mediante narrativas transmedia y estrategias digitales basadas en datos. 
+                        Integro herramientas avanzadas de <span class="font-bold">Inteligencia Artificial Generativa</span> 
+                        para optimizar la creación de contenidos y automatizar procesos. Perfil proactivo, adaptable a entornos dinámicos y enfocado en el cumplimiento de objetivos institucionales.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Left Column: Skills & Tech -->
+            <div class="space-y-8">
+                
+                <!-- Core Competencies -->
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <h3 class="flex items-center gap-2 text-lg font-bold text-gray-800 mb-4 pb-2 border-b border-gray-100">
+                        <i class="fas fa-star text-primary"></i> Competencias Clave
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Comunicación Corporativa</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Gestión de Redes Sociales</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Estrategia Digital</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Comunicación Interna</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Gestión de Crisis</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Storytelling & Copywriting</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Imagen de Marca</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full border border-gray-200">Análisis de KPIs</span>
+                    </div>
+                </div>
+
+                <!-- Education & Languages (AHORA ARRIBA) -->
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <h3 class="flex items-center gap-2 text-lg font-bold text-gray-800 mb-4 pb-2 border-b border-gray-100">
+                        <i class="fas fa-graduation-cap text-primary"></i> Formación
+                    </h3>
+                    
+                    <!-- Main Degree Block with Intermediate Title Nested -->
+                    <div class="mb-4 relative pl-4 border-l-2 border-primary">
+                        <h4 class="font-bold text-gray-800 text-sm">Licenciatura en Relaciones Públicas e Institucionales</h4>
+                        <p class="text-xs text-gray-500 mb-2">UADE | 2023 - Actualidad</p>
+                        <span class="inline-block px-2 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded mb-3">En curso (4to año)</span>
+
+                        <!-- Nested Intermediate Title -->
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 mt-2">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i class="fas fa-certificate text-primary text-xs"></i>
+                                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Título Intermedio Obtenido</span>
+                            </div>
+                            <p class="text-xs font-bold text-gray-800 leading-snug">Técnica Universitaria en Relaciones Públicas y Comunicación Institucional</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 relative pl-4 border-l-2 border-gray-200">
+                        <h4 class="font-bold text-gray-800 text-sm">Bachiller</h4>
+                        <p class="text-xs text-gray-500">Escuela Secundaria N° 7 | 2022</p>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <h4 class="font-bold text-gray-800 text-sm mb-2">Idiomas</h4>
+                        <div class="flex justify-between items-center text-sm mb-1">
+                            <span>Español (Nativo)</span>
+                            <div class="w-24 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-primary"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span>Inglés (B2 - Intermedio)</span>
+                            <div class="w-24 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="w-[60%] h-full bg-primary/70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Tech Stack (AHORA ABAJO) -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 w-20 h-20 bg-purple-50 rounded-full blur-2xl"></div>
+                    <h3 class="flex items-center gap-2 text-lg font-bold text-gray-800 mb-4 pb-2 border-b border-gray-100 relative z-10">
+                        <i class="fas fa-microchip text-purple-500"></i> Tech & IA Stack
+                    </h3>
+                    
+                    <div class="space-y-4 relative z-10">
+                        <div>
+                            <p class="text-xs font-semibold text-gray-400 uppercase mb-2">Inteligencia Artificial</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="flex items-center gap-1 px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded border border-purple-200">
+                                    <i class="fas fa-robot"></i> ChatGPT (Advanced)
+                                </span>
+                                <span class="flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded border border-blue-200">
+                                    <i class="fas fa-sparkles"></i> Gemini
+                                </span>
+                                <span class="flex items-center gap-1 px-3 py-1 bg-teal-100 text-teal-700 text-xs font-bold rounded border border-teal-200">
+                                    <i class="fas fa-search"></i> Perplexity
+                                </span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1 italic">Automatización de flujos de trabajo & Prompt Engineering</p>
+                        </div>
+
+                        <div>
+                            <p class="text-xs font-semibold text-gray-400 uppercase mb-2">Diseño & Edición</p>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="flex items-center gap-2 text-sm text-gray-700">
+                                    <i class="fas fa-palette text-pink-500"></i> Canva Pro
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-gray-700">
+                                    <i class="fas fa-video text-gray-800"></i> CapCut
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-gray-700">
+                                    <i class="fas fa-file-excel text-green-600"></i> Office 365
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Experience -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <h3 class="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center text-sm shadow-md">
+                        <i class="fas fa-briefcase"></i>
+                    </span>
+                    Experiencia
+                </h3>
+
+                <!-- Job 1: Deportivo Familiar -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-primary hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row justify-between md:items-start mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-800">Community Manager & Estrategia Digital</h4>
+                            <p class="text-primary font-medium">Emprendimiento Deportivo Familiar</p>
+                        </div>
+                        <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded mt-2 md:mt-0 inline-block w-fit">
+                            2024 - 2025
+                        </span>
+                    </div>
+                    <ul class="space-y-2 mt-4 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check mt-1 text-primary text-xs"></i>
+                            <span>Diseño y ejecución de estrategias de comunicación para fidelización de socios y difusión de eventos deportivos.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-chart-line mt-1 text-green-500 text-xs"></i>
+                            <span class="font-medium text-gray-800">Logro: Incremento del engagement en redes sociales mediante contenido dinámico y gestión de comunidad.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 flex gap-2">
+                        <span class="text-xs px-2 py-1 bg-gray-50 text-gray-500 rounded border">Social Media</span>
+                        <span class="text-xs px-2 py-1 bg-gray-50 text-gray-500 rounded border">Sports Marketing</span>
+                    </div>
+                </div>
+
+                <!-- Job 2: Gastronómico Académico -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-gray-300 hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row justify-between md:items-start mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-800">Estrategia de Comunicación & Branding</h4>
+                            <p class="text-gray-500 font-medium">Proyecto Gastronómico Académico</p>
+                        </div>
+                        <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded mt-2 md:mt-0 inline-block w-fit">
+                            2023 - 2024
+                        </span>
+                    </div>
+                    <ul class="space-y-2 mt-4 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check mt-1 text-gray-400 text-xs"></i>
+                            <span>Desarrollo integral de identidad de marca (Branding) y plan de lanzamiento de producto.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check mt-1 text-gray-400 text-xs"></i>
+                            <span>Creación de contenido audiovisual (Reels/TikTok) y grilla de contenidos optimizada con <span class="font-bold">Herramientas de IA</span>.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Job 3: Maquilladora -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-gray-300 hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row justify-between md:items-start mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-800">Maquilladora Profesional & Marca Personal</h4>
+                            <p class="text-gray-500 font-medium">Freelance</p>
+                        </div>
+                        <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded mt-2 md:mt-0 inline-block w-fit">
+                            2022 - 2025
+                        </span>
+                    </div>
+                    <ul class="space-y-2 mt-4 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check mt-1 text-gray-400 text-xs"></i>
+                            <span>Gestión integral de negocio B2C: atención al cliente, agenda y <span class="font-bold">promoción digital</span> en Instagram/TikTok.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check mt-1 text-gray-400 text-xs"></i>
+                            <span>Desarrollo de habilidades de <span class="font-bold">negociación</span> y fidelización de cartera de clientes.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Job 4: Eventos (Optional, kept for completeness or can be removed) -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-gray-300 hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row justify-between md:items-start mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-800">Organización de Eventos & Protocolo</h4>
+                            <p class="text-gray-500 font-medium">Proyectos Académicos / Voluntariados</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 mt-4 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check mt-1 text-gray-400 text-xs"></i>
+                            <span>Planificación logística integral y coordinación de eventos institucionales y sociales.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills Box -->
+                <div class="bg-gradient-to-r from-primary to-accent rounded-2xl shadow-lg p-6 text-white mt-8">
+                    <h3 class="font-bold mb-3 flex items-center gap-2">
+                        <i class="fas fa-users"></i> Habilidades Blandas
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-center">
+                        <div class="bg-white/10 rounded-lg p-3 backdrop-blur-sm">Liderazgo</div>
+                        <div class="bg-white/10 rounded-lg p-3 backdrop-blur-sm">Visión Estratégica</div>
+                        <div class="bg-white/10 rounded-lg p-3 backdrop-blur-sm">Adaptabilidad</div>
+                        <div class="bg-white/10 rounded-lg p-3 backdrop-blur-sm">Creatividad</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center text-gray-400 text-xs pb-8">
+            <p>&copy; 2026 Regina Oliva Sosa.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
